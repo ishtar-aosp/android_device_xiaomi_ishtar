@@ -4,6 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- MCXSuperFG cannot map a 4K P010 application stream. Keep Ultra HDR on
+         a sub-4K P010 + JPEG combination while regular JPEG remains uncapped. -->
+    <bool name="config_enableJpegUltraHdr">true</bool>
+    <integer name="config_maxJpegUltraHdrPixels">3000000</integer>
+
     <!-- Enable auxiliary cameras selector. -->
     <bool name="config_enableAuxCameras">true</bool>
 
