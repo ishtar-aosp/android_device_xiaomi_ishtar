@@ -12,11 +12,19 @@ TARGET_USES_ST_NFC := true
 # Inherit from xiaomi sm8550-common
 include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
+# NFC
+TARGET_KERNEL_EXT_MODULES := $(filter-out nxp/opensource/driver,$(TARGET_KERNEL_EXT_MODULES))
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8550-modules
+TARGET_KERNEL_EXT_MODULES += \
+	st/opensource/driver
+
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
+	stm_nfc_i2c.ko \
 	cs35l41_dlkm.ko \
 	goodix_fod.ko \
 	fts_touch_spi.ko \

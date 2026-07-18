@@ -1448,21 +1448,6 @@ vendor/etc/df_default.xml
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 
-# NFC
-odm/bin/hw/android.hardware.nfc@1.2-service-st
-odm/etc/init/android.hardware.nfc@1.2-service-st.rc
-odm/etc/libnfc-nci.conf
-odm/lib64/libstnfc-auth.so
-odm/lib64/nfc_nci.st21nfc.st.so
-vendor/etc/libnfc-hal-st-519_mtp.conf
-vendor/etc/libnfc-hal-st-ishtar.conf
-vendor/etc/libnfc-hal-st.conf
-vendor/etc/st54j_conf.txt
-vendor/etc/st54k_conf_38.4MHz.txt
-vendor/firmware/st54j_fw.bin
-vendor/firmware/st54k_conf_38.4MHz.bin
-vendor/lib64/libstfactory-vendor.so
-
 # QVR configs
 vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt
 vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml
