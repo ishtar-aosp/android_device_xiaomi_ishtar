@@ -14,3 +14,6 @@ vendor.usb.product_string=Xiaomi 13 Ultra
 
 # NFC
 ro.hardware.nfc=ST_NFC
+ro.vendor.nfc.repair=1
+ro.vendor.nfc.dispatch_optim=1
+ro.vendor.nfc.wallet_fusion=1
