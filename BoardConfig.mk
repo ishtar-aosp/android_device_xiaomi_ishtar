@@ -14,6 +14,7 @@ include device/xiaomi/sm8550-common/BoardConfigCommon.mk
 
 # NFC
 TARGET_KERNEL_EXT_MODULES := $(filter-out nxp/opensource/driver,$(TARGET_KERNEL_EXT_MODULES))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(filter-out nxp-nci.ko,$(BOARD_VENDOR_KERNEL_MODULES_LOAD))
 
 # Display
 TARGET_SCREEN_DENSITY := 560
