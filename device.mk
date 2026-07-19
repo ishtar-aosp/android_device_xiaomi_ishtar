@@ -24,6 +24,11 @@ PRODUCT_COPY_FILES += \
 # Fingerprint
 TARGET_HAS_UDFPS := true
 
+# Haptics
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ishtar/proprietary/vendor/etc/vibrator/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_1.bin \
+    vendor/xiaomi/ishtar/proprietary/vendor/etc/vibrator/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_7.bin
+
 # IFAAService
 PRODUCT_PACKAGES += \
     IFAAService
@@ -48,6 +53,11 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Vibrator
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ishtar/proprietary/vendor/etc/vibrator/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_1.bin \
+    vendor/xiaomi/ishtar/proprietary/vendor/etc/vibrator/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_7.bin
 
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/ishtar/ishtar-vendor.mk)
