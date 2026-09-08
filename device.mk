@@ -33,6 +33,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
+# Init
+PRODUCT_PACKAGES += \
+    init.ishtar.rc
+
 # NFC
 TARGET_USES_ST_NFC := true
 
