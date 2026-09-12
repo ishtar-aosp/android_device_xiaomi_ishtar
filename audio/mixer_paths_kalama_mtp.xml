@@ -94,6 +94,10 @@
     <!-- RX Controls -->
     <ctl name="RX_MACRO RX0 MUX" value="ZERO" />
     <ctl name="RX_MACRO RX1 MUX" value="ZERO" />
+    <ctl name="RX_MACRO RX2 MUX" value="ZERO" />
+    <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
+    <ctl name="RDAC3_MUX" value="RX1" />
+    <ctl name="EAR PA GAIN" value="G_6_DB" />
     <ctl name="RX INT0_1 MIX1 INP0" value="ZERO" />
     <ctl name="RX INT0_1 MIX1 INP1" value="ZERO" />
     <ctl name="RX INT0_1 MIX1 INP2" value="ZERO" />
@@ -581,17 +585,23 @@
         <ctl name="WSA_AIF_CPS Mixer WSA_SPKR_CPS_2" value="1" />
     </path>
 
+    <!-- WCD earpiece (CODEC_DMA RX-1). CS35L41 TDM is speaker-only. -->
     <path name="handset">
-        <ctl name="T PCM Source" value="ASP" />
-        <ctl name="T ASP TX1 Source" value="ASPRX1" />
-        <ctl name="T ASPTX Ref" value="Ref" />
-        <ctl name="T AMP Enable Switch" value="1" />
-        <ctl name="T AMP PCM Gain" value="5" />
+        <ctl name="RX_EAR Mode" value="ON" />
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX2" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX_COMP1 Switch" value="0" />
+        <ctl name="RX_COMP2 Switch" value="0" />
+        <ctl name="EAR_RDAC Switch" value="1" />
+        <ctl name="RDAC3_MUX" value="RX1" />
+        <ctl name="RX_RX0 Digital Volume" value="84" />
+        <ctl name="EAR PA GAIN" value="G_6_DB" />
     </path>
 
     <path name="handset-vbat">
        <path name="handset" />
-       <ctl name="WSA_RX INT0 VBAT WSA RX0 VBAT Enable" value="1" />
     </path>
 
     <path name="handset-mic">
