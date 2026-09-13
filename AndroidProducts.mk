@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ishtar.mk
+    $(LOCAL_DIR)/alpha_ishtar.mk
