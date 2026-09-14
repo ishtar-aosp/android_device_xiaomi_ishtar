@@ -23,7 +23,7 @@ PRODUCT_MODEL := 2304FPN6DC
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=Xiaomi/ishtar/ishtar:16/BP2A.250605.031/OS3.0.4.0.WMACNXM:user/release-keys
+    BuildFingerprint=Xiaomi/ishtar/ishtar:16/BP2A.250605.031/OS3.0.307.0.WMACNXM:user/release-keys
 
 # Device config
 TARGET_HAS_UDFPS := true
