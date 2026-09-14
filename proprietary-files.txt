@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are taken from ishtar-ota_full-OS3.0.4.0.WMACNXM-user-16.0
+## are taken from ishtar-ota_full-OS3.0.307.0.WMACNXM-user-16.0
 
 # ACDBs
 odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Forte_acdb_cal.acdb
