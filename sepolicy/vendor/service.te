@@ -1,0 +1,2 @@
+attribute vendor_service;
+type hal_aon_service, vendor_service, service_manager_type;
