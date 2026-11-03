@@ -7,6 +7,9 @@
 # Inherit from xiaomi sm8550-common
 $(call inherit-product, device/xiaomi/sm8550-common/common.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 # Audio
 # The common audio product installs generic kalama MTP files to these same
 # destinations. Drop those entries before installing ishtar's Cirrus/TDM

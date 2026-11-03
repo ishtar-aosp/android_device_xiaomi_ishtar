@@ -47,6 +47,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+ifneq ($(wildcard vendor/xiaomi/camera/miuicamera.mk),)
+BOARD_SEPOLICY_M4DEFS += target_has_miuicamera=true
+endif
 
 # Inherit from the proprietary version
 include vendor/xiaomi/ishtar/BoardConfigVendor.mk
