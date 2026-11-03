@@ -1,0 +1,16 @@
+# AON AIDL service
+allow hal_camera_default hal_aon_service:service_manager { add find };
+
+# ToF sensor
+allow hal_camera_default stmvl53l5_device:chr_file rw_file_perms;
+
+# GPU devfreq symlink okuma
+allow hal_camera_default vendor_sysfs_kgsl:lnk_file r_file_perms;
+
+# qspmhal
+dontaudit hal_camera_default vendor_hal_qspmhal_hwservice:hwservice_manager find;
+dontaudit hal_camera_default vendor_hal_qspmhal_default:binder call;
+
+
+dontaudit hal_camera_default { system_prop default_prop aac_drc_prop ab_update_gki_prop }:file { read open getattr map };
+dontaudit hal_camera_default default_android_service:service_manager find;
